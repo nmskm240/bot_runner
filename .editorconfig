@@ -1,0 +1,20 @@
+# rootはトップレベルの .editorconfig ファイルを明示します
+root = true
+
+# すべてのファイルに共通の設定
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# DartとFlutterファイル（.dart）専用の設定
+[*.dart]
+indent_style = space
+indent_size = 2
+max_line_length = 80
+
+# YAMLファイル（Flutterのpubspec.yamlや他の設定ファイルに適用）
+[*.yaml]
+indent_style = space
+indent_size = 2
